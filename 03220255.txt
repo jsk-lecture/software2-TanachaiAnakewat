@@ -1,0 +1,4 @@
+ブレークポイント:a point in the program where the code will stop executing
+ステップ実行:One of the debugger's functions, which allows the user to execute a program step by step (one line, one instruction, etc.) to check the contents of the process.
+スタックトレース:a report of the computer's internal processing operations
+システムコール:the programmatic way in which a computer program requests a service from the kernel of the operating system on which it is executed
