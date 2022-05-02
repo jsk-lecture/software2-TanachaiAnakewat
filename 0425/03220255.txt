@@ -1,0 +1,4 @@
+再帰関数呼び出し:one where procedure A calls itself or calls procedure B which then calls procedure A again
+再帰プロセス:この計算過程では、計算が遅延されていて、膨張し、収縮しています.
+反復プロセス:再帰的プロセスの階乗計算では膨張、縮小をしていましたが、この方法では対照的に膨張、収縮をしていません
+末尾再帰最適化:a subroutine call performed as the final action of a procedure. If the target of a tail is the same subroutine, the subroutine is said to be tail recursive, which is a special case of direct recursion.
