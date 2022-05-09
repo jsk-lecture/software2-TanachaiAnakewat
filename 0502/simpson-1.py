@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(2000)
 def inc(n):
     return n + 1
 
@@ -23,8 +25,18 @@ def simpson(f,a,b,n):
             return 4*y(k)
     return (h/3.0)*sum(kvalue,0,inc,n)
 
-print(cube(10))
-print("simp")
-print (simpson(cube, 0, 1, 7))
-print (simpson(cube, 0, 1, 10))
+def integral(f, a, b, dx):
+    return sum(f, a + (dx / 2.0), lambda x: x + dx, b) * dx 
+
+print("simp function")
+print("f= cube, a=0, b =1")
+print("n=5  , integral = {}".format(simpson(cube, 0, 1, 5)))
+print("n=10 , integral = {}".format(simpson(cube, 0, 1, 10)))
+print("n=100, integral = {}".format(simpson(cube, 0, 1, 100)))
+
+print("integral function f= cube, a=0, b =1")
+print("f= cube, a=0, b =1")
+print("dx=0.2 , integral = {}".format(integral(cube, 0, 1, 0.2)))
+print("dx=0.1 , integral = {}".format(integral(cube, 0, 1, 0.1)))
+print("dx=0.01, integral = {}".format(integral(cube, 0, 1, 0.01)))
 

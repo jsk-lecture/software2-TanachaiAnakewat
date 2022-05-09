@@ -1,0 +1,5 @@
+Higher-order function (高階関数)： function that does at least one of the following:
+1.takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
+2.returns a function as its result.
+Anonymous function (無名関数): function definition that is not bound to an identifier. Anonymous functions are often arguments being passed to higher-order functions or used for constructing the result of a higher-order function that needs to return a function.
+First-class citizen (第一級オブジェクト):an entity which supports all the operations generally available to other entities. These operations typically include being passed as an argument, returned from a function, and assigned to a variable.
