@@ -25,12 +25,13 @@ c = -1000
 def f(a):
     b = 100
     def g(c):
-        # global b
-        # nonlocal b
-        # b = 10000
+        #global b
+        nonlocal b
+        #b = 10000
         return a + b + c
     return g
 
 h = f(10)
 print("h = f(10), h(100)=(10) = {}, a = {}, b = {}, c = {}".format(h(100), a, b, c))
 
+print(h(100))
