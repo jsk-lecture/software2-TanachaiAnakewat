@@ -73,6 +73,7 @@ def bfs(graph, start, target):
             return node
         for n in graph[node]:
             fringe.append(n)
+            #print(fringe)
     return None
 
 

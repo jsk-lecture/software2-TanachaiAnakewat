@@ -13,7 +13,7 @@ heuristic = {
 
 def remove_front(fringe):
     fringe.sort(key = lambda x: heuristic[x.state])
-    # print(["{} {}".format(x.state, heuristic[x.state]) for x in fringe])
+    #print(["{} {}".format(x.state, heuristic[x.state]) for x in fringe])
     ret = fringe[0]
     del(fringe[0]) # remove first element
     return ret
