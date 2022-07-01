@@ -20,7 +20,7 @@ int main (int argc, char* argv[]) {
   print_bit(f);
 
   float g;
-  g = 2625000.0;
+  g = 2625500.0;
   printf("g = %-12f : ", g);
   print_bit(g);
 
